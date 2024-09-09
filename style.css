@@ -1,0 +1,267 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #f5f5f5;
+    border-bottom: 2px solid #ccc;
+}
+
+.texto-imagem {
+    width: 600px;
+    padding-left: 435px;
+}
+
+.bordas {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding-top: 20px;;
+    padding-bottom: 20px;
+}
+
+.logo img {
+    height: 50px; /* Ajuste o tamanho da logo conforme necessário */
+}
+
+.search{
+    width: 490px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+input#search-bar{
+    margin: 0 auto;
+    width: 100%;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 1rem;
+    border: 1px solid #D0CFCE;
+    outline: none;
+    &:focus{
+      border: 1px solid #000000;
+      transition: 0.35s ease;
+      color: #000000;
+      &::-webkit-input-placeholder{
+        transition: opacity 0.45s ease; 
+          opacity: 0;
+       }
+      &::-moz-placeholder {
+        transition: opacity 0.45s ease; 
+          opacity: 0;
+       }
+      &:-ms-placeholder {
+       transition: opacity 0.45s ease; 
+         opacity: 0;
+        }    
+    }
+}
+ 
+.search-icon{
+    position: relative;
+    float: right;
+    width: 75px;
+    height: 75px;
+    top: -62px;
+    right: -45px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #ff385c;
+    text-transform: uppercase;
+}
+
+p, ul {
+    font-size: 1rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+ul li strong {
+    color: #333;
+}
+
+.avaliacao {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+footer a {
+    color: #ff385c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+.botao-reserva {
+    display: inline-block;
+    background-color: #ff385c;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.botao-reserva:hover {
+    background-color: #e74c3c;
+    transform: scale(1.05);
+}
+
+.comodidades-icone {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.comodidades-icone i {
+    font-size: 1.5rem;
+    margin-right: 0.8rem;
+    color: #ff385c;
+}
+
+.comodidades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.photo-container {
+    overflow: hidden;    /* Faz com que as imagens respeitem a borda arredondada */
+    display: inline-block;
+    padding: 10px;       /* Espaçamento interno para a borda */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grinder {
+    display: flex;
+    align-items: center;
+    grid-gap: 100px;
+}
+
+.grinder-avaliacoes {
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+    width: auto;
+}
+
+.objeto {
+    margin: 0;
+    padding: 10px; /* Ajuste o padding conforme necessário */
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-areas: 
+        "large large small1 small2"
+        "large large small3 small4";
+    grid-gap: 5px;
+}
+
+.large-photo {
+    grid-area: large;
+}
+
+.small-photo {
+    grid-auto-flow: column;
+}
+
+.photo img {
+    border-radius: 10px; /* Borda arredondada ao redor do grupo */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo {
+    position: relative;
+}
+
+.photo-grid {
+    width: 1000px;
+    height: 400px;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}

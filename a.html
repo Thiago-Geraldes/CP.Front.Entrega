@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layout de Imagens</title>
+    <style>
+        body {
+            text-align: center; /* Centraliza o conteúdo */
+        }
+
+        .container {
+            display: flex; /* Cria um flex container */
+            justify-content: center; /* Alinha os itens no centro */
+        }
+
+        .main-image {
+            width: 50%; /* Define a largura da imagem principal */
+        }
+
+        .thumbnails {
+            display: flex;
+            flex-direction: column; /* Organiza as miniaturas em coluna */
+            width: 50%; /* Define a largura do container das miniaturas */
+        }
+
+        .thumbnail {
+            width: 100%; /* Define a largura de cada miniatura */
+            height: auto; /* Mantém a proporção da imagem */
+            margin-bottom: 10px; /* Adiciona um espaçamento entre as miniaturas */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="1.png" alt="Imagem Principal" class="main-image">
+        <div class="thumbnails">
+            <img src="Screenshot_12.png" alt="Miniatura 1" class="thumbnail">
+            <img src="Screenshot_14.png" alt="Miniatura 2" class="thumbnail">
+            <img src="Screenshot_16.png" alt="Miniatura 3" class="thumbnail">
+            <img src="caminho/para/sua/imagem_4.jpg" alt="Miniatura 4" class="thumbnail">
+        </div>
+    </div>
+</body>
+</html>
